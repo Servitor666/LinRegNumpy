@@ -30,5 +30,5 @@ class ScratchLinearRegressor:
                 input = np.array(input).reshape(1, -1)
             except:
                 print(f'Could not convert to numpy array. Input type: {type(input)}')
-        # assert(self._coef.shape == input.shape)
+
         return np.dot(input, self._coef) + self.bias
